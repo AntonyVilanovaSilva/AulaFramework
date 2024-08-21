@@ -1,0 +1,160 @@
+﻿@model AulaFramework.Models.DEMONSTRATIVO
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>DEMONSTRATIVO</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ID_GRU)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ID_GRU)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NOME_GRU)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NOME_GRU)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ID_SUB_GRU)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ID_SUB_GRU)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NOME_SUB_GRU)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NOME_SUB_GRU)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ID_CLA)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ID_CLA)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NOME_CLA)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NOME_CLA)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NOME_SEC)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NOME_SEC)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UNI_MED)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UNI_MED)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DESCRICAO_PRO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DESCRICAO_PRO)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SALDO_ANTERIOR)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SALDO_ANTERIOR)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SALDO_ANT_CUSTO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SALDO_ANT_CUSTO)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ENTRADA_QTD)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ENTRADA_QTD)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ENTRADA_VL_UNIT)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ENTRADA_VL_UNIT)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SAIDA_QTD)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SAIDA_QTD)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SAIDA_CM)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SAIDA_CM)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SALDO_QTD)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SALDO_QTD)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SALDO_CM)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SALDO_CM)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="xAlmoxarifadoModel13" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="ANO">
+    <Key>
+      <PropertyRef Name="ANO1" />
+    </Key>
+    <Property Name="ANO1" Type="Int32" Nullable="false" />
+    <Property Name="ABERTO" Type="Boolean" />
+  </EntityType>
+  <EntityContainer Name="xAlmoxarifadoEntities13" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="ANO" EntityType="Self.ANO" />
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,50 @@
+﻿@model AulaFramework.Models.ITENS_REQ
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>ITENS_REQ</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.QTD_PRO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.QTD_PRO)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PRE_UNIT)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PRE_UNIT)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TOTAL_ITEM)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TOTAL_ITEM)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TOTAL_REAL)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TOTAL_REAL)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="xAlmoxarifadoModel14StoreContainer" CdmEntityContainer="xAlmoxarifadoEntities14">
+    <EntitySetMapping Name="DEMONSTRATIVO">
+      <EntityTypeMapping TypeName="xAlmoxarifadoModel14.DEMONSTRATIVO">
+        <MappingFragment StoreEntitySet="DEMONSTRATIVO">
+          <ScalarProperty Name="ID_GRU" ColumnName="ID_GRU" />
+          <ScalarProperty Name="NOME_GRU" ColumnName="NOME_GRU" />
+          <ScalarProperty Name="ID_SUB_GRU" ColumnName="ID_SUB_GRU" />
+          <ScalarProperty Name="NOME_SUB_GRU" ColumnName="NOME_SUB_GRU" />
+          <ScalarProperty Name="ID_CLA" ColumnName="ID_CLA" />
+          <ScalarProperty Name="NOME_CLA" ColumnName="NOME_CLA" />
+          <ScalarProperty Name="ID_SEC" ColumnName="ID_SEC" />
+          <ScalarProperty Name="NOME_SEC" ColumnName="NOME_SEC" />
+          <ScalarProperty Name="UNI_MED" ColumnName="UNI_MED" />
+          <ScalarProperty Name="ID_PRO" ColumnName="ID_PRO" />
+          <ScalarProperty Name="DESCRICAO_PRO" ColumnName="DESCRICAO_PRO" />
+          <ScalarProperty Name="SALDO_ANTERIOR" ColumnName="SALDO_ANTERIOR" />
+          <ScalarProperty Name="SALDO_ANT_CUSTO" ColumnName="SALDO_ANT_CUSTO" />
+          <ScalarProperty Name="ENTRADA_QTD" ColumnName="ENTRADA_QTD" />
+          <ScalarProperty Name="ENTRADA_VL_UNIT" ColumnName="ENTRADA_VL_UNIT" />
+          <ScalarProperty Name="SAIDA_QTD" ColumnName="SAIDA_QTD" />
+          <ScalarProperty Name="SAIDA_CM" ColumnName="SAIDA_CM" />
+          <ScalarProperty Name="SALDO_QTD" ColumnName="SALDO_QTD" />
+          <ScalarProperty Name="SALDO_CM" ColumnName="SALDO_CM" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

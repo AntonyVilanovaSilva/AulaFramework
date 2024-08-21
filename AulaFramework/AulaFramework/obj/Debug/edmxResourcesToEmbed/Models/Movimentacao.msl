@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="xAlmoxarifadoModel19StoreContainer" CdmEntityContainer="xAlmoxarifadoEntities19">
+    <EntitySetMapping Name="MOVIMENTACAO">
+      <EntityTypeMapping TypeName="xAlmoxarifadoModel19.MOVIMENTACAO">
+        <MappingFragment StoreEntitySet="MOVIMENTACAO">
+          <ScalarProperty Name="ID_MOVI" ColumnName="ID_MOVI" />
+          <ScalarProperty Name="ID_PRO" ColumnName="ID_PRO" />
+          <ScalarProperty Name="ID_SEC" ColumnName="ID_SEC" />
+          <ScalarProperty Name="ID_REQ" ColumnName="ID_REQ" />
+          <ScalarProperty Name="ID_NOTA" ColumnName="ID_NOTA" />
+          <ScalarProperty Name="PRE_UNIT" ColumnName="PRE_UNIT" />
+          <ScalarProperty Name="QTD_PRO" ColumnName="QTD_PRO" />
+          <ScalarProperty Name="SALDO" ColumnName="SALDO" />
+          <ScalarProperty Name="EST_ANT" ColumnName="EST_ANT" />
+          <ScalarProperty Name="TIPO_MOV" ColumnName="TIPO_MOV" />
+          <ScalarProperty Name="MES_MOV" ColumnName="MES_MOV" />
+          <ScalarProperty Name="ANO_MOV" ColumnName="ANO_MOV" />
+          <ScalarProperty Name="DATA_MOV" ColumnName="DATA_MOV" />
+          <ScalarProperty Name="ID_SET" ColumnName="ID_SET" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

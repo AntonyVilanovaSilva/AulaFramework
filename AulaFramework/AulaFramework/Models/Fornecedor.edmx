@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="xAlmoxarifadoModel16.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="FORNECEDOR">
+          <Key>
+            <PropertyRef Name="CNPJ" />
+          </Key>
+          <Property Name="ID_FOR" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="FANTASIA" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="CNPJ" Type="varchar" MaxLength="18" Nullable="false" />
+          <Property Name="RESPONSAVEL" Type="varchar" MaxLength="40" />
+          <Property Name="INS_MUNICIPAL" Type="varchar" MaxLength="18" />
+          <Property Name="INS_ESTADUAL" Type="varchar" MaxLength="18" />
+          <Property Name="ENDERECO" Type="varchar" MaxLength="40" />
+          <Property Name="BAIRRO" Type="varchar" MaxLength="25" />
+          <Property Name="UF" Type="varchar" MaxLength="2" />
+          <Property Name="TELEFONE" Type="varchar" MaxLength="12" />
+          <Property Name="FAX" Type="varchar" MaxLength="12" />
+          <Property Name="EMAIL" Type="varchar" MaxLength="40" />
+          <Property Name="CELULAR" Type="varchar" MaxLength="40" />
+        </EntityType>
+        <EntityContainer Name="xAlmoxarifadoModel16StoreContainer">
+          <EntitySet Name="FORNECEDOR" EntityType="Self.FORNECEDOR" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="xAlmoxarifadoModel16" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="FORNECEDOR">
+          <Key>
+            <PropertyRef Name="CNPJ" />
+          </Key>
+          <Property Name="ID_FOR" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="FANTASIA" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CNPJ" Type="String" MaxLength="18" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="RESPONSAVEL" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="INS_MUNICIPAL" Type="String" MaxLength="18" FixedLength="false" Unicode="false" />
+          <Property Name="INS_ESTADUAL" Type="String" MaxLength="18" FixedLength="false" Unicode="false" />
+          <Property Name="ENDERECO" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="BAIRRO" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+          <Property Name="UF" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Name="TELEFONE" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Name="FAX" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Name="EMAIL" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="CELULAR" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityContainer Name="xAlmoxarifadoEntities16" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="FORNECEDOR" EntityType="Self.FORNECEDOR" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="xAlmoxarifadoModel16StoreContainer" CdmEntityContainer="xAlmoxarifadoEntities16">
+          <EntitySetMapping Name="FORNECEDOR">
+            <EntityTypeMapping TypeName="xAlmoxarifadoModel16.FORNECEDOR">
+              <MappingFragment StoreEntitySet="FORNECEDOR">
+                <ScalarProperty Name="ID_FOR" ColumnName="ID_FOR" />
+                <ScalarProperty Name="FANTASIA" ColumnName="FANTASIA" />
+                <ScalarProperty Name="CNPJ" ColumnName="CNPJ" />
+                <ScalarProperty Name="RESPONSAVEL" ColumnName="RESPONSAVEL" />
+                <ScalarProperty Name="INS_MUNICIPAL" ColumnName="INS_MUNICIPAL" />
+                <ScalarProperty Name="INS_ESTADUAL" ColumnName="INS_ESTADUAL" />
+                <ScalarProperty Name="ENDERECO" ColumnName="ENDERECO" />
+                <ScalarProperty Name="BAIRRO" ColumnName="BAIRRO" />
+                <ScalarProperty Name="UF" ColumnName="UF" />
+                <ScalarProperty Name="TELEFONE" ColumnName="TELEFONE" />
+                <ScalarProperty Name="FAX" ColumnName="FAX" />
+                <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+                <ScalarProperty Name="CELULAR" ColumnName="CELULAR" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

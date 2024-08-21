@@ -1,0 +1,114 @@
+﻿@model AulaFramework.Models.FORNECEDOR
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>FORNECEDOR</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ID_FOR)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ID_FOR)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FANTASIA)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FANTASIA)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RESPONSAVEL)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RESPONSAVEL)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.INS_MUNICIPAL)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.INS_MUNICIPAL)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.INS_ESTADUAL)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.INS_ESTADUAL)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ENDERECO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ENDERECO)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BAIRRO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BAIRRO)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UF)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UF)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TELEFONE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TELEFONE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FAX)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FAX)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EMAIL)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EMAIL)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CELULAR)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CELULAR)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.CNPJ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

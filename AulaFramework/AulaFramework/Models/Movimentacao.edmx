@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="xAlmoxarifadoModel19.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="MOVIMENTACAO">
+          <Key>
+            <PropertyRef Name="ID_MOVI" />
+          </Key>
+          <Property Name="ID_MOVI" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ID_PRO" Type="int" Nullable="false" />
+          <Property Name="ID_SEC" Type="int" Nullable="false" />
+          <Property Name="ID_REQ" Type="int" />
+          <Property Name="ID_NOTA" Type="int" />
+          <Property Name="PRE_UNIT" Type="numeric" Precision="18" Scale="4" />
+          <Property Name="QTD_PRO" Type="numeric" Precision="18" Scale="4" />
+          <Property Name="SALDO" Type="numeric" Precision="18" Scale="4" />
+          <Property Name="EST_ANT" Type="numeric" Precision="10" Scale="4" />
+          <Property Name="TIPO_MOV" Type="bit" Nullable="false" />
+          <Property Name="MES_MOV" Type="int" />
+          <Property Name="ANO_MOV" Type="int" Nullable="false" />
+          <Property Name="DATA_MOV" Type="datetime" Nullable="false" />
+          <Property Name="ID_SET" Type="int" />
+        </EntityType>
+        <EntityContainer Name="xAlmoxarifadoModel19StoreContainer">
+          <EntitySet Name="MOVIMENTACAO" EntityType="Self.MOVIMENTACAO" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="xAlmoxarifadoModel19" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="MOVIMENTACAO">
+          <Key>
+            <PropertyRef Name="ID_MOVI" />
+          </Key>
+          <Property Name="ID_MOVI" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ID_PRO" Type="Int32" Nullable="false" />
+          <Property Name="ID_SEC" Type="Int32" Nullable="false" />
+          <Property Name="ID_REQ" Type="Int32" />
+          <Property Name="ID_NOTA" Type="Int32" />
+          <Property Name="PRE_UNIT" Type="Decimal" Precision="18" Scale="4" />
+          <Property Name="QTD_PRO" Type="Decimal" Precision="18" Scale="4" />
+          <Property Name="SALDO" Type="Decimal" Precision="18" Scale="4" />
+          <Property Name="EST_ANT" Type="Decimal" Precision="10" Scale="4" />
+          <Property Name="TIPO_MOV" Type="Boolean" Nullable="false" />
+          <Property Name="MES_MOV" Type="Int32" />
+          <Property Name="ANO_MOV" Type="Int32" Nullable="false" />
+          <Property Name="DATA_MOV" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="ID_SET" Type="Int32" />
+        </EntityType>
+        <EntityContainer Name="xAlmoxarifadoEntities19" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="MOVIMENTACAO" EntityType="Self.MOVIMENTACAO" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="xAlmoxarifadoModel19StoreContainer" CdmEntityContainer="xAlmoxarifadoEntities19">
+          <EntitySetMapping Name="MOVIMENTACAO">
+            <EntityTypeMapping TypeName="xAlmoxarifadoModel19.MOVIMENTACAO">
+              <MappingFragment StoreEntitySet="MOVIMENTACAO">
+                <ScalarProperty Name="ID_MOVI" ColumnName="ID_MOVI" />
+                <ScalarProperty Name="ID_PRO" ColumnName="ID_PRO" />
+                <ScalarProperty Name="ID_SEC" ColumnName="ID_SEC" />
+                <ScalarProperty Name="ID_REQ" ColumnName="ID_REQ" />
+                <ScalarProperty Name="ID_NOTA" ColumnName="ID_NOTA" />
+                <ScalarProperty Name="PRE_UNIT" ColumnName="PRE_UNIT" />
+                <ScalarProperty Name="QTD_PRO" ColumnName="QTD_PRO" />
+                <ScalarProperty Name="SALDO" ColumnName="SALDO" />
+                <ScalarProperty Name="EST_ANT" ColumnName="EST_ANT" />
+                <ScalarProperty Name="TIPO_MOV" ColumnName="TIPO_MOV" />
+                <ScalarProperty Name="MES_MOV" ColumnName="MES_MOV" />
+                <ScalarProperty Name="ANO_MOV" ColumnName="ANO_MOV" />
+                <ScalarProperty Name="DATA_MOV" ColumnName="DATA_MOV" />
+                <ScalarProperty Name="ID_SET" ColumnName="ID_SET" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

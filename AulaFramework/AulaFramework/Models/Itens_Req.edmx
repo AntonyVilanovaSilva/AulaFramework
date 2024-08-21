@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="xAlmoxarifadoModel18.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="ITENS_REQ">
+          <Key>
+            <PropertyRef Name="NUM_ITEM" />
+            <PropertyRef Name="ID_PRO" />
+            <PropertyRef Name="ID_REQ" />
+            <PropertyRef Name="ID_SEC" />
+          </Key>
+          <Property Name="NUM_ITEM" Type="int" Nullable="false" />
+          <Property Name="ID_PRO" Type="int" Nullable="false" />
+          <Property Name="ID_REQ" Type="int" Nullable="false" />
+          <Property Name="ID_SEC" Type="int" Nullable="false" />
+          <Property Name="QTD_PRO" Type="numeric" Precision="18" Scale="4" Nullable="false" />
+          <Property Name="PRE_UNIT" Type="numeric" Precision="18" Scale="4" />
+          <Property Name="TOTAL_ITEM" Type="numeric" Precision="37" Scale="8" StoreGeneratedPattern="Computed" />
+          <Property Name="TOTAL_REAL" Type="numeric" Precision="18" Scale="4" />
+        </EntityType>
+        <EntityContainer Name="xAlmoxarifadoModel18StoreContainer">
+          <EntitySet Name="ITENS_REQ" EntityType="Self.ITENS_REQ" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="xAlmoxarifadoModel18" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="ITENS_REQ">
+          <Key>
+            <PropertyRef Name="NUM_ITEM" />
+            <PropertyRef Name="ID_PRO" />
+            <PropertyRef Name="ID_REQ" />
+            <PropertyRef Name="ID_SEC" />
+          </Key>
+          <Property Name="NUM_ITEM" Type="Int32" Nullable="false" />
+          <Property Name="ID_PRO" Type="Int32" Nullable="false" />
+          <Property Name="ID_REQ" Type="Int32" Nullable="false" />
+          <Property Name="ID_SEC" Type="Int32" Nullable="false" />
+          <Property Name="QTD_PRO" Type="Decimal" Precision="18" Scale="4" Nullable="false" />
+          <Property Name="PRE_UNIT" Type="Decimal" Precision="18" Scale="4" />
+          <Property Name="TOTAL_ITEM" Type="Decimal" Precision="37" Scale="8" annotation:StoreGeneratedPattern="Computed" />
+          <Property Name="TOTAL_REAL" Type="Decimal" Precision="18" Scale="4" />
+        </EntityType>
+        <EntityContainer Name="xAlmoxarifadoEntities18" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="ITENS_REQ" EntityType="Self.ITENS_REQ" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="xAlmoxarifadoModel18StoreContainer" CdmEntityContainer="xAlmoxarifadoEntities18">
+          <EntitySetMapping Name="ITENS_REQ">
+            <EntityTypeMapping TypeName="xAlmoxarifadoModel18.ITENS_REQ">
+              <MappingFragment StoreEntitySet="ITENS_REQ">
+                <ScalarProperty Name="NUM_ITEM" ColumnName="NUM_ITEM" />
+                <ScalarProperty Name="ID_PRO" ColumnName="ID_PRO" />
+                <ScalarProperty Name="ID_REQ" ColumnName="ID_REQ" />
+                <ScalarProperty Name="ID_SEC" ColumnName="ID_SEC" />
+                <ScalarProperty Name="QTD_PRO" ColumnName="QTD_PRO" />
+                <ScalarProperty Name="PRE_UNIT" ColumnName="PRE_UNIT" />
+                <ScalarProperty Name="TOTAL_ITEM" ColumnName="TOTAL_ITEM" />
+                <ScalarProperty Name="TOTAL_REAL" ColumnName="TOTAL_REAL" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

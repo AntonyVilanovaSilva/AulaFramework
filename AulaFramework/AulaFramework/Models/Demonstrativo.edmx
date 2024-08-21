@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="xAlmoxarifadoModel14.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="DEMONSTRATIVO">
+          <Key>
+            <PropertyRef Name="ID_SEC" />
+            <PropertyRef Name="ID_PRO" />
+          </Key>
+          <Property Name="ID_GRU" Type="int" />
+          <Property Name="NOME_GRU" Type="varchar" MaxLength="40" />
+          <Property Name="ID_SUB_GRU" Type="int" />
+          <Property Name="NOME_SUB_GRU" Type="varchar" MaxLength="40" />
+          <Property Name="ID_CLA" Type="int" />
+          <Property Name="NOME_CLA" Type="varchar" MaxLength="40" />
+          <Property Name="ID_SEC" Type="int" Nullable="false" />
+          <Property Name="NOME_SEC" Type="varchar" MaxLength="40" />
+          <Property Name="UNI_MED" Type="varchar" MaxLength="5" />
+          <Property Name="ID_PRO" Type="int" Nullable="false" />
+          <Property Name="DESCRICAO_PRO" Type="varchar" MaxLength="40" />
+          <Property Name="SALDO_ANTERIOR" Type="numeric" Precision="18" Scale="4" />
+          <Property Name="SALDO_ANT_CUSTO" Type="numeric" Precision="18" Scale="4" />
+          <Property Name="ENTRADA_QTD" Type="numeric" Precision="18" Scale="4" />
+          <Property Name="ENTRADA_VL_UNIT" Type="numeric" Precision="18" Scale="4" />
+          <Property Name="SAIDA_QTD" Type="numeric" Precision="18" Scale="4" />
+          <Property Name="SAIDA_CM" Type="numeric" Precision="18" Scale="4" />
+          <Property Name="SALDO_QTD" Type="numeric" Precision="18" Scale="4" />
+          <Property Name="SALDO_CM" Type="numeric" Precision="18" Scale="4" />
+        </EntityType>
+        <EntityContainer Name="xAlmoxarifadoModel14StoreContainer">
+          <EntitySet Name="DEMONSTRATIVO" EntityType="Self.DEMONSTRATIVO" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="xAlmoxarifadoModel14" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="DEMONSTRATIVO">
+          <Key>
+            <PropertyRef Name="ID_SEC" />
+            <PropertyRef Name="ID_PRO" />
+          </Key>
+          <Property Name="ID_GRU" Type="Int32" />
+          <Property Name="NOME_GRU" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="ID_SUB_GRU" Type="Int32" />
+          <Property Name="NOME_SUB_GRU" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="ID_CLA" Type="Int32" />
+          <Property Name="NOME_CLA" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="ID_SEC" Type="Int32" Nullable="false" />
+          <Property Name="NOME_SEC" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="UNI_MED" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="ID_PRO" Type="Int32" Nullable="false" />
+          <Property Name="DESCRICAO_PRO" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="SALDO_ANTERIOR" Type="Decimal" Precision="18" Scale="4" />
+          <Property Name="SALDO_ANT_CUSTO" Type="Decimal" Precision="18" Scale="4" />
+          <Property Name="ENTRADA_QTD" Type="Decimal" Precision="18" Scale="4" />
+          <Property Name="ENTRADA_VL_UNIT" Type="Decimal" Precision="18" Scale="4" />
+          <Property Name="SAIDA_QTD" Type="Decimal" Precision="18" Scale="4" />
+          <Property Name="SAIDA_CM" Type="Decimal" Precision="18" Scale="4" />
+          <Property Name="SALDO_QTD" Type="Decimal" Precision="18" Scale="4" />
+          <Property Name="SALDO_CM" Type="Decimal" Precision="18" Scale="4" />
+        </EntityType>
+        <EntityContainer Name="xAlmoxarifadoEntities14" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="DEMONSTRATIVO" EntityType="Self.DEMONSTRATIVO" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="xAlmoxarifadoModel14StoreContainer" CdmEntityContainer="xAlmoxarifadoEntities14">
+          <EntitySetMapping Name="DEMONSTRATIVO">
+            <EntityTypeMapping TypeName="xAlmoxarifadoModel14.DEMONSTRATIVO">
+              <MappingFragment StoreEntitySet="DEMONSTRATIVO">
+                <ScalarProperty Name="ID_GRU" ColumnName="ID_GRU" />
+                <ScalarProperty Name="NOME_GRU" ColumnName="NOME_GRU" />
+                <ScalarProperty Name="ID_SUB_GRU" ColumnName="ID_SUB_GRU" />
+                <ScalarProperty Name="NOME_SUB_GRU" ColumnName="NOME_SUB_GRU" />
+                <ScalarProperty Name="ID_CLA" ColumnName="ID_CLA" />
+                <ScalarProperty Name="NOME_CLA" ColumnName="NOME_CLA" />
+                <ScalarProperty Name="ID_SEC" ColumnName="ID_SEC" />
+                <ScalarProperty Name="NOME_SEC" ColumnName="NOME_SEC" />
+                <ScalarProperty Name="UNI_MED" ColumnName="UNI_MED" />
+                <ScalarProperty Name="ID_PRO" ColumnName="ID_PRO" />
+                <ScalarProperty Name="DESCRICAO_PRO" ColumnName="DESCRICAO_PRO" />
+                <ScalarProperty Name="SALDO_ANTERIOR" ColumnName="SALDO_ANTERIOR" />
+                <ScalarProperty Name="SALDO_ANT_CUSTO" ColumnName="SALDO_ANT_CUSTO" />
+                <ScalarProperty Name="ENTRADA_QTD" ColumnName="ENTRADA_QTD" />
+                <ScalarProperty Name="ENTRADA_VL_UNIT" ColumnName="ENTRADA_VL_UNIT" />
+                <ScalarProperty Name="SAIDA_QTD" ColumnName="SAIDA_QTD" />
+                <ScalarProperty Name="SAIDA_CM" ColumnName="SAIDA_CM" />
+                <ScalarProperty Name="SALDO_QTD" ColumnName="SALDO_QTD" />
+                <ScalarProperty Name="SALDO_CM" ColumnName="SALDO_CM" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="xAlmoxarifadoModel16.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="FORNECEDOR">
+    <Key>
+      <PropertyRef Name="CNPJ" />
+    </Key>
+    <Property Name="ID_FOR" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FANTASIA" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="CNPJ" Type="varchar" MaxLength="18" Nullable="false" />
+    <Property Name="RESPONSAVEL" Type="varchar" MaxLength="40" />
+    <Property Name="INS_MUNICIPAL" Type="varchar" MaxLength="18" />
+    <Property Name="INS_ESTADUAL" Type="varchar" MaxLength="18" />
+    <Property Name="ENDERECO" Type="varchar" MaxLength="40" />
+    <Property Name="BAIRRO" Type="varchar" MaxLength="25" />
+    <Property Name="UF" Type="varchar" MaxLength="2" />
+    <Property Name="TELEFONE" Type="varchar" MaxLength="12" />
+    <Property Name="FAX" Type="varchar" MaxLength="12" />
+    <Property Name="EMAIL" Type="varchar" MaxLength="40" />
+    <Property Name="CELULAR" Type="varchar" MaxLength="40" />
+  </EntityType>
+  <EntityContainer Name="xAlmoxarifadoModel16StoreContainer">
+    <EntitySet Name="FORNECEDOR" EntityType="Self.FORNECEDOR" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

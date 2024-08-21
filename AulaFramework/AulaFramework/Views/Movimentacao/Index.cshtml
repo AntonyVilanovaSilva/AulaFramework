@@ -1,0 +1,105 @@
+﻿@model IEnumerable<AulaFramework.Models.MOVIMENTACAO>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ID_PRO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ID_SEC)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ID_REQ)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ID_NOTA)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PRE_UNIT)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.QTD_PRO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SALDO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EST_ANT)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TIPO_MOV)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MES_MOV)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ANO_MOV)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DATA_MOV)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ID_SET)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ID_PRO)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ID_SEC)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ID_REQ)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ID_NOTA)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PRE_UNIT)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.QTD_PRO)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SALDO)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EST_ANT)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TIPO_MOV)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MES_MOV)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ANO_MOV)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DATA_MOV)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ID_SET)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ID_MOVI }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ID_MOVI }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ID_MOVI })
+        </td>
+    </tr>
+}
+
+</table>

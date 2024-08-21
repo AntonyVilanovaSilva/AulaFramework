@@ -1,0 +1,99 @@
+﻿@model IEnumerable<AulaFramework.Models.FORNECEDOR>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ID_FOR)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FANTASIA)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RESPONSAVEL)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.INS_MUNICIPAL)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.INS_ESTADUAL)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ENDERECO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BAIRRO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UF)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TELEFONE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FAX)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EMAIL)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CELULAR)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ID_FOR)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FANTASIA)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.RESPONSAVEL)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.INS_MUNICIPAL)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.INS_ESTADUAL)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ENDERECO)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BAIRRO)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UF)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TELEFONE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FAX)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EMAIL)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CELULAR)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.CNPJ }) |
+            @Html.ActionLink("Details", "Details", new { id=item.CNPJ }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.CNPJ })
+        </td>
+    </tr>
+}
+
+</table>

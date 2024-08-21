@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="xAlmoxarifadoModel15" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="ESTOQUE">
+    <Key>
+      <PropertyRef Name="ID_SEC" />
+      <PropertyRef Name="ID_PRO" />
+    </Key>
+    <Property Name="ID_SEC" Type="Int32" Nullable="false" />
+    <Property Name="ID_PRO" Type="Int32" Nullable="false" />
+    <Property Name="QTD_PRO" Type="Decimal" Precision="10" Scale="4" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="xAlmoxarifadoEntities15" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="ESTOQUE" EntityType="Self.ESTOQUE" />
+  </EntityContainer>
+</Schema>

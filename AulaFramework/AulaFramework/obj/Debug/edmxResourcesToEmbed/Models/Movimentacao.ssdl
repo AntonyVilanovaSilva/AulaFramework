@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="xAlmoxarifadoModel19.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="MOVIMENTACAO">
+    <Key>
+      <PropertyRef Name="ID_MOVI" />
+    </Key>
+    <Property Name="ID_MOVI" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ID_PRO" Type="int" Nullable="false" />
+    <Property Name="ID_SEC" Type="int" Nullable="false" />
+    <Property Name="ID_REQ" Type="int" />
+    <Property Name="ID_NOTA" Type="int" />
+    <Property Name="PRE_UNIT" Type="numeric" Precision="18" Scale="4" />
+    <Property Name="QTD_PRO" Type="numeric" Precision="18" Scale="4" />
+    <Property Name="SALDO" Type="numeric" Precision="18" Scale="4" />
+    <Property Name="EST_ANT" Type="numeric" Precision="10" Scale="4" />
+    <Property Name="TIPO_MOV" Type="bit" Nullable="false" />
+    <Property Name="MES_MOV" Type="int" />
+    <Property Name="ANO_MOV" Type="int" Nullable="false" />
+    <Property Name="DATA_MOV" Type="datetime" Nullable="false" />
+    <Property Name="ID_SET" Type="int" />
+  </EntityType>
+  <EntityContainer Name="xAlmoxarifadoModel19StoreContainer">
+    <EntitySet Name="MOVIMENTACAO" EntityType="Self.MOVIMENTACAO" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

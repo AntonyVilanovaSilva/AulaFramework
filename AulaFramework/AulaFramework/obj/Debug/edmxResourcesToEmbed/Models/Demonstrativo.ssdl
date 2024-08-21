@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="xAlmoxarifadoModel14.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="DEMONSTRATIVO">
+    <Key>
+      <PropertyRef Name="ID_SEC" />
+      <PropertyRef Name="ID_PRO" />
+    </Key>
+    <Property Name="ID_GRU" Type="int" />
+    <Property Name="NOME_GRU" Type="varchar" MaxLength="40" />
+    <Property Name="ID_SUB_GRU" Type="int" />
+    <Property Name="NOME_SUB_GRU" Type="varchar" MaxLength="40" />
+    <Property Name="ID_CLA" Type="int" />
+    <Property Name="NOME_CLA" Type="varchar" MaxLength="40" />
+    <Property Name="ID_SEC" Type="int" Nullable="false" />
+    <Property Name="NOME_SEC" Type="varchar" MaxLength="40" />
+    <Property Name="UNI_MED" Type="varchar" MaxLength="5" />
+    <Property Name="ID_PRO" Type="int" Nullable="false" />
+    <Property Name="DESCRICAO_PRO" Type="varchar" MaxLength="40" />
+    <Property Name="SALDO_ANTERIOR" Type="numeric" Precision="18" Scale="4" />
+    <Property Name="SALDO_ANT_CUSTO" Type="numeric" Precision="18" Scale="4" />
+    <Property Name="ENTRADA_QTD" Type="numeric" Precision="18" Scale="4" />
+    <Property Name="ENTRADA_VL_UNIT" Type="numeric" Precision="18" Scale="4" />
+    <Property Name="SAIDA_QTD" Type="numeric" Precision="18" Scale="4" />
+    <Property Name="SAIDA_CM" Type="numeric" Precision="18" Scale="4" />
+    <Property Name="SALDO_QTD" Type="numeric" Precision="18" Scale="4" />
+    <Property Name="SALDO_CM" Type="numeric" Precision="18" Scale="4" />
+  </EntityType>
+  <EntityContainer Name="xAlmoxarifadoModel14StoreContainer">
+    <EntitySet Name="DEMONSTRATIVO" EntityType="Self.DEMONSTRATIVO" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

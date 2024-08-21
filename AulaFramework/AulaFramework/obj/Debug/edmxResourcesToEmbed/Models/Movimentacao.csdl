@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="xAlmoxarifadoModel19" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="MOVIMENTACAO">
+    <Key>
+      <PropertyRef Name="ID_MOVI" />
+    </Key>
+    <Property Name="ID_MOVI" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ID_PRO" Type="Int32" Nullable="false" />
+    <Property Name="ID_SEC" Type="Int32" Nullable="false" />
+    <Property Name="ID_REQ" Type="Int32" />
+    <Property Name="ID_NOTA" Type="Int32" />
+    <Property Name="PRE_UNIT" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="QTD_PRO" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="SALDO" Type="Decimal" Precision="18" Scale="4" />
+    <Property Name="EST_ANT" Type="Decimal" Precision="10" Scale="4" />
+    <Property Name="TIPO_MOV" Type="Boolean" Nullable="false" />
+    <Property Name="MES_MOV" Type="Int32" />
+    <Property Name="ANO_MOV" Type="Int32" Nullable="false" />
+    <Property Name="DATA_MOV" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ID_SET" Type="Int32" />
+  </EntityType>
+  <EntityContainer Name="xAlmoxarifadoEntities19" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="MOVIMENTACAO" EntityType="Self.MOVIMENTACAO" />
+  </EntityContainer>
+</Schema>

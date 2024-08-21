@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="xAlmoxarifadoModel16StoreContainer" CdmEntityContainer="xAlmoxarifadoEntities16">
+    <EntitySetMapping Name="FORNECEDOR">
+      <EntityTypeMapping TypeName="xAlmoxarifadoModel16.FORNECEDOR">
+        <MappingFragment StoreEntitySet="FORNECEDOR">
+          <ScalarProperty Name="ID_FOR" ColumnName="ID_FOR" />
+          <ScalarProperty Name="FANTASIA" ColumnName="FANTASIA" />
+          <ScalarProperty Name="CNPJ" ColumnName="CNPJ" />
+          <ScalarProperty Name="RESPONSAVEL" ColumnName="RESPONSAVEL" />
+          <ScalarProperty Name="INS_MUNICIPAL" ColumnName="INS_MUNICIPAL" />
+          <ScalarProperty Name="INS_ESTADUAL" ColumnName="INS_ESTADUAL" />
+          <ScalarProperty Name="ENDERECO" ColumnName="ENDERECO" />
+          <ScalarProperty Name="BAIRRO" ColumnName="BAIRRO" />
+          <ScalarProperty Name="UF" ColumnName="UF" />
+          <ScalarProperty Name="TELEFONE" ColumnName="TELEFONE" />
+          <ScalarProperty Name="FAX" ColumnName="FAX" />
+          <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+          <ScalarProperty Name="CELULAR" ColumnName="CELULAR" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

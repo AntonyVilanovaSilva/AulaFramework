@@ -1,0 +1,129 @@
+﻿@model IEnumerable<AulaFramework.Models.DEMONSTRATIVO>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ID_GRU)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NOME_GRU)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ID_SUB_GRU)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NOME_SUB_GRU)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ID_CLA)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NOME_CLA)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NOME_SEC)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UNI_MED)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DESCRICAO_PRO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SALDO_ANTERIOR)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SALDO_ANT_CUSTO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ENTRADA_QTD)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ENTRADA_VL_UNIT)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SAIDA_QTD)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SAIDA_CM)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SALDO_QTD)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SALDO_CM)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ID_GRU)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NOME_GRU)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ID_SUB_GRU)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NOME_SUB_GRU)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ID_CLA)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NOME_CLA)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NOME_SEC)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UNI_MED)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DESCRICAO_PRO)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SALDO_ANTERIOR)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SALDO_ANT_CUSTO)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ENTRADA_QTD)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ENTRADA_VL_UNIT)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SAIDA_QTD)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SAIDA_CM)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SALDO_QTD)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SALDO_CM)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+        </td>
+    </tr>
+}
+
+</table>
